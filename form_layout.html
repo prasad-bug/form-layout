@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_layout</title>
+</head>
+<style>
+    input[type="text"], input[type="email"], input[type="password"] {
+      padding: 10px;
+      margin: 5px;
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  
+
+<body>
+
+    <form action="Submit-form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required id="name">
+            <button type="submit">Submit</button>
+        </div>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" required id="username">
+            <button type="submit">Submit</button>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+        </div>
+
+        <div>
+            <label>Choose your color</label>
+        </div>
+
+        <div>
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" id="blue" value="blue">
+
+            <label for="red">red</label>
+            <input type="radio" name="color" id="red" value="red">
+        </div>
+
+
+        <div>
+            <label for="city">city</label>
+            <select name="city" id="city">
+                <option value="nyc">New York</option>
+                <option value="ls">los Angeles</option>
+                <option value="sf">San Fransico</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <label for="file">Upload your resume:</label>
+            <input type="file" id="file" name="resume">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="alert('Hello!')">Click Me</button>
+        </div>
+
+        <div>
+            <fieldset>Personal Information
+            <label for="First-name">first name</label>
+            <input type="text" name="First-name" id="First-name">
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" id="last-name">
+        </fieldset>
+        </div>
+
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" required id="username">
+        </div>
+
+        <div>
+            <label for="phone-number">Phone Number</label>
+            <input type="text" name="phone-number" id="phone-number" pattern="\d{3}[-]\d{3}[-]\d{4}" required >
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100" required>
+        </div>
+    </form>
+
+    <form action="submit.form.php" method="post">
+        <label for="emal">email</label>
+        <input type="text" name="email" id="emal" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="login.php" method="POST">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+        <button type="submit">Login</button>
+      </form>
+      
+      <form action="register.php" method="POST">
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" name="email" required>
+        <button type="submit">Register</button>
+        <label for="user_id">user</label>
+        <input type="hidden" name="user_id" id="user_id" value="12345">
+
+      </form>
+
+      
+
+</body>
+
+</html>
